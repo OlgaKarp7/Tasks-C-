@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Введите число num ");
+﻿Console.WriteLine("Введите трехзначное число num ");
 
 int num = int.Parse(Console.ReadLine());
 int res = (num % 100) / 10;
