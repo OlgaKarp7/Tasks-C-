@@ -9,4 +9,12 @@ int number = int.Parse(Console.ReadLine());
 int SumCount(int a)
 {
     int sum = 0;
+    while(a != 0)
+    {
+        sum += a%10;   
+         a /= 10;
+    }
+    return sum;
 }
+
+Console.Write(SumCount(number));
