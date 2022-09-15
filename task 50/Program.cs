@@ -5,6 +5,15 @@
 8 4 2 4
 m = 1, n =7 -> такого числа в массиве нет */
 
+Console.Write("r = ");
+int r = int.Parse(Console.ReadLine());
+Console.Write("c = ");
+int c = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите позицию элемента n  ");
+int n = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите позицию элемента m  ");
+int m = int.Parse(Console.ReadLine());
+
 int[,] GetArray(int r, int c, int minValue, int maxValue)
 {
     int[,] result = new int[r, c];
@@ -42,14 +51,7 @@ int PosValueArray(int[,] array)
          return num;
 }
 
-Console.Write("r = ");
-int r = int.Parse(Console.ReadLine());
-Console.Write("c = ");
-int c = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите позицию элемента n  ");
-int n = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите позицию элемента m  ");
-int m = int.Parse(Console.ReadLine());
+
 
 int[,] myArray = GetArray(r, c, 0, 100);
 PrintArray(myArray);
