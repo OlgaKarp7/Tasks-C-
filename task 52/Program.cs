@@ -32,50 +32,32 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("n = ");
 int n = int.Parse(Console.ReadLine());
 
-int[,] myArray = GetArray(m, n, 0, 100);
-PrintArray(myArray);
 
-int[,] AverageArray(int[,] array)
+
+double[] AverageArray(int[,] array)
 {
-            int mean = 0;
-            if (m = 0 && n < )
-            {
-                mean += array[m, n];
-            }
-            return mean;
-            else (n = array.Length)
-            {
-                mean = mean / n;
-                Console.Write(mean);
-            }
-}
     
-    
-Console.WriteLine();
-myArray = GetArray(m, n, 0, 100);
-PrintArray(myArray);
-int resultSum = AverageArray(myArray);
-Console.WriteLine($"Среднее арифметическое каждого столбца: {resultSum}");
-
-
-/*int SumDiagonalArray(int[,] array)
-{
-    int diagSum = 0;
-    for (int i = 0; i < array.GetLength(0); i++) 
+    double[] mean = new double[m];
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        
+        mean[i] = 0;
+        for (int j = 0; j < n; j++)
         {
-            if (i == j)
-            {
-                diagSum += array[i, j];
-            }
+            mean[i] += array[i, j]; 
         }
-    }
-    return diagSum;
+        
+    }    
+return mean;
 }
 
-int[,] myArray = GetArray(rows, colums);
-PrintArray(myArray);
+
+
+
 Console.WriteLine();
-int resultSum = SumDiagonalArray(myArray);
-Console.WriteLine($"Сумма: {resultSum}");*/
+int[,] myArray = GetArray(m, n, 1, 9);
+PrintArray(myArray);
+double[] res = AverageArray(myArray);
+Console.WriteLine($"{String.Join("; ", res)}");
+
+
