@@ -35,30 +35,27 @@ int n = int.Parse(Console.ReadLine());
 int[,] myArray = GetArray(m, n, 0, 100);
 PrintArray(myArray);
 
-int[,] MyArray(int[,] array)
+int[,] AverageArray(int[,] array)
 {
-    double average = 0;
-    for (int i = 0; i < array.GetLength(0); i++) 
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            if (i == 0 && j <= n)
+            int mean = 0;
+            if (m = 0 && n < )
             {
-                average = average + array[i, j] / n;
+                mean += array[m, n];
             }
-            if (j < n)
+            return mean;
+            else (n = array.Length)
             {
-                Console.Write($"{average},{" "}");
+                mean = mean / n;
+                Console.Write(mean);
             }
-        }
-    }
-   return average; 
 }
-
-
+    
+    
 Console.WriteLine();
-myArray = MyArray(myArray);
+myArray = GetArray(m, n, 0, 100);
 PrintArray(myArray);
+int resultSum = AverageArray(myArray);
+Console.WriteLine($"Среднее арифметическое каждого столбца: {resultSum}");
 
 
 /*int SumDiagonalArray(int[,] array)

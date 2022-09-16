@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task 50\\task 50.csproj",
-      "projectName": "task 50",
-      "projectPath": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task 50\\task 50.csproj",
+      "projectUniqueName": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task50\\task50.csproj",
+      "projectName": "task50",
+      "projectPath": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task50\\task50.csproj",
       "packagesPath": "C:\\Users\\Ольга\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task 50\\obj\\",
+      "outputPath": "C:\\Users\\Ольга\\Desktop\\Tasks C#\\task50\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ольга\\AppData\\Roaming\\NuGet\\NuGet.Config",
