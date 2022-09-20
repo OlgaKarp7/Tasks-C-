@@ -78,7 +78,7 @@ return mean;
 Console.WriteLine();
 int[,] myArray = GetArray(m, n, 1, 9);
 PrintArray(myArray);
-int[] res = AverageArray(myArray);
+double[] res = AverageArray(myArray);
 Console.WriteLine($"{String.Join("; ", res)}");
 
 
