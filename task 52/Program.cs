@@ -33,26 +33,47 @@ Console.Write("n = ");
 int n = int.Parse(Console.ReadLine());
 
 
-
 double[] AverageArray(int[,] array)
 {
-    
-    double[] mean = new double[m];
-    for (int i = 0; i < m; i++)
+    double[] mean = new double[array.GetLength(1)];
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        
-        mean[i] = 0;
-        for (int j = 0; j < n; j++)
+        double sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            mean[i] += array[i, j]; 
+            sum += array[i, j];
         }
-        
+        mean[i] = Math.Round(sum / array.GetLength(0), 1);
     }    
 return mean;
 }
+/*int[] AverageArray(int[,] matr)
+{
+    int rows = matr.GetLength(0);
+    int cols = matr.GetLength(1);
 
+    int[] result = new int[cols];
+    int row = 0;
+    int col = 0;
 
+    for (int i = 0; i < cols; i++)
+    {
+        result[i] = 0;
 
+        while (row < rows)
+        {
+            result[i] = result[i] + matr[row, col];
+            row++;
+        }
+
+        result[i] = result[i];
+        col++;
+        row = 0;
+
+    }
+
+    return result;
+}*/
 
 Console.WriteLine();
 int[,] myArray = GetArray(m, n, 1, 9);
